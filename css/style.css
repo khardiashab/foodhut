@@ -1,0 +1,332 @@
+:root{
+    --fcolor:#343a40;
+    --ffamily:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+}
+/* {
+    text-align: center;
+} */
+html{
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: var(--fcolor);
+    margin:0;
+    padding:0;
+    color: #FFFFFF;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 500; 
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #FFFFFF;   
+}
+
+.btn{
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    background-color: #ff214f;
+    border-color: #ff214f;
+}
+.btn:first-child:hover, :not(.btn-check)+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #fc052e;
+    border-color: #fc052e;
+}
+/* todo:  home section styling      */
+body #home{
+    background: linear-gradient(rgba(52, 58, 64,.80), rgba(52, 58, 64,.80)), url(/images/main.jpg);
+    background-size: cover;
+ 
+    background-attachment: fixed;
+    font-weight: bold;
+    width: 100%;
+    background-size: cover;  
+}
+.navbar {
+    border-bottom: rgb(105, 105, 105) 1px solid;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar a:hover{
+    color: rgb(105, 105, 105);
+}
+
+.navbar a:active, .navbar a:focus{
+    color: #ff214f;
+}
+
+.navbar .logo{
+    width: 150px;
+    height: 100px;
+    visibility: visible;
+    margin:auto;
+}
+
+.home-content{
+    height: 800px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.heading , .description{
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+.description{
+    font-weight: 200;
+    color:rgb(214, 205, 205);
+}
+
+/* todo:  about section styling      */
+
+.about-row{
+    height: 700px;
+}
+.about-description{
+    padding:90px;
+    font-size: 120%;
+    text-align: left;
+    line-height: 1.2;
+    overflow: hidden;
+}
+.about-section-img{
+    background-image:  url(/images/about-section.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/*  todo: section gallery styling      */
+
+.display-1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.blog-img-col{
+    padding: 0;
+    margin: 0;
+    border: rgb(105, 105, 105) 1px solid;
+    position: relative;
+}
+
+.blog-img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    display: inline-block;
+
+
+
+}
+.hover-effect{
+    width: 100%;
+    position: absolute;
+    font-size: 2.5rem;
+    inset: 0;
+    background-color: rgba(52, 58, 64,.60);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.blog-img, .hover-effect{
+    transition: 200ms ease-in;
+}
+.blog-img-col:hover .hover-effect{
+    opacity: 1;
+}
+
+.blog-img:hover .hover-effect{
+    display: inline;
+}
+
+/*  todo: section book table styling      */
+#book-table{
+    background-image: linear-gradient(rgba(52, 58, 64,.80),rgba(52, 58, 64,.80) ), url(/images/book-table-img.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+.find-button-div{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+
+.form-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(105, 105, 105);
+    padding:auto;
+    margin-bottom: 50px;
+    
+}
+input::placeholder{
+    padding-left: 20px;
+    color:#fff;
+    font-size: 1.3;
+    
+}
+
+.input-col {
+    width: 80%;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;  
+    border: rgb(105, 105, 105) 2px solid;
+    background: transparent;
+    color:#fff;
+    font-size: 1.3;
+    
+    
+}
+/*  todo: section BLOG styling      */
+
+
+
+.selector-button{
+    margin:70px auto;
+    text-align: center;
+}
+
+.selector-button >.food-btn{
+    color: #fff;
+    background-color: #ff214f;
+    border:#ff214f;
+}
+.selector-button >.food-btn:hover{
+    color: #fff;
+    background-color: #ff214f;
+    border:#ff214f;
+}
+.selector-button >.juice-btn{
+    color:#ff214f;
+    background-color: transparent;
+    border: none;
+}
+.selector-button>.juice-btn :hover {
+    color:#fc052e;
+    background-color:rgba(52, 58, 64,.80) ;
+    border: transparent;
+}
+
+
+.food-juices {
+    position: relative;
+}
+.food{
+    position: relative;
+    display: block;
+}
+.juice{
+    position:absolute;
+    inset: 0;
+    display: none;
+}
+
+
+
+
+/* now work on card decks */
+.card {
+    border: rgb(105, 105, 105) 2px solid;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: transparent;
+    text-align: center;
+    margin:10px;
+}
+.card-body{
+    padding: 50px;
+    padding-top: 10px;
+}
+.card-title {
+    font-size: 2rem;
+    font-weight: 500;
+    
+}
+.card-text {
+    color: grey;
+}
+.card-body > .btn{
+    padding: 10px;
+}
+.card-body > .btn  :hover{
+    background-color:#fc052e;
+    color: #fff;
+    border-color: #fc052e;
+}
+
+
+
+/*  todo: section reviews styling      */
+.review-col{
+    padding: 5%;
+}
+
+.comment{
+    margin-top: 30px;
+    border:rgb(105, 105, 105) 2px solid;
+    border-top: #fc052e 3px solid;
+    padding:8%;
+    padding-top: 10px;
+    color: grey;
+}
+
+/*  todo: section contact-us styling      */
+#contact-us{
+    border-top: rgb(105, 105, 105) 2px solid;
+}
+.find-img-col iframe{
+    width: 100%;
+}
+
+.find-description{
+    padding: 80px 100px;
+    text-align: left;
+    color:rgb(214, 205, 205);
+}
+
+.place {
+    color: grey;
+}
+
+.place > i{
+    margin-right: 20px;
+}
+
+.contact-box{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+/*  todo: section footer styling      */
+
+footer {
+    padding-bottom: 5rem;
+    text-align: center;
+    font-size: medium;
+}
+footer em{
+    color: #ff214f;
+}
+
